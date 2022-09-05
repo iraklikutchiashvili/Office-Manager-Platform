@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylenew.css">
+    <link rel="stylesheet" href="css/responsivenew.css">
+    <title>Employ Info</title>
+</head>
+<body class="employbody">
+
+    <!-- HEADER -->
+    <div class="flex-cont">
+
+        <div class="back-btn" onclick="location.href='index.html';" style="cursor: pointer;">
+            <img src="images/vector.svg" alt="Vector">
+        </div>
+    
+        
+        <div class="pagenames-box">
+            <p class="infop">თანამშრომლის ინფო</p>
+            <small class="employpgnum">1/2</small>
+            <div class="infop-line"></div>
+            <p class="laptopreq">ლეპტოპის მახასიათებლები</p>
+            
+        </div>
+
+
+    </div>
+
+    <!-- EMPLY FORM -->
+
+    <form class="employform"  action="">
+
+        <div class="namesbox">
+            <div class="formcolumn">
+                <label for="fname">სახელი</label>
+                <input type="text" id="fname" name="firstname" placeholder="გრიშა">
+                <p>მინიმუმ 2 სიმბოლო, ქართული ასოები</p><br><br>
+            </div>
+
+            <div class="formcolumn lastname">
+                <label for="lname">გვარი</label>
+                <input type="text" id="lname" name="lastname"  placeholder="ბაგრატიონი">
+                <p id="error-msg2">მინიმუმ 2 სიმბოლო, ქართული ასოები</p><br><br>
+            </div>
+
+        </div>
+        
+        <div class="formcolumn">
+            <select name="team" id="team">
+                <option value="">თიმი</option>
+            </select>
+            <p></p>
+        </div>
+
+        <div class="formcolumn">
+            <select name="position" id="position">
+                <option value="">პოზიცია</option>
+            </select>
+            <p></p>
+        </div>
+
+        <div class="formcolumn">
+            <label for="email">მეილი</label>
+            <input type="text" id="email" name="email" placeholder="grisha666@redberry.ge">
+            <p>უნდა მთავრდებოდეს @redberry.ge - თი</p>
+        </div>
+
+        <div class="formcolumn">
+            <label for="phone">ტელეფონის ნომერი</label>
+            <input type="text" id="phone"name="phone" placeholder="+995 598 01 07 20">
+            <p>ქართული მობილური ნომრის ფორმატი</p>
+        </div>
+
+        <button type="submit" class="defaultnextpgbtn"></button>
+
+        <div class="nextpg-btn" onclick="defaultNextPgActive()" style="cursor: pointer;" >
+            <p>შემდეგი</p>
+        </div>
+
+
+    </form>
+
+    <img src="images/logo102.svg" alt="Logo" class="employ-logo">
+    
+    <script src="js/scriptnew.js"></script>
+</body>
+</html>

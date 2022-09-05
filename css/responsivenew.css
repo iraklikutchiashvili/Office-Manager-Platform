@@ -1,0 +1,99 @@
+@media (max-width : 390px){
+
+    /* Landing page responsive design*/
+
+    .landing-img {
+        display: none;
+    }
+
+    .low-res-img{
+        margin: 117px 122px;
+        display: block;
+    }
+
+    .landing-container {
+        margin: 67px auto;
+        width: 358px;
+        height: 742px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn {
+        max-width: 328px;
+        width: 100%;
+        height: 60px;
+    }
+
+
+
+     /* HEADER RESPONSIVE */ /*   EMPLOYINFO RESPONSIVE DESIGN */
+     .employform{
+        padding: 20px;
+        margin: auto;
+    }
+    .laptopreq {
+        display: none;
+    }
+
+    .infop-line{
+        display: none;
+    }
+
+    .employpgnum{
+        display: block;
+        color: #898989;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .pagenames-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 50px;
+    }
+    .back-btn{
+        background-color: #F9F6EE;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .flex-cont{
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .namesbox{
+        flex-direction: column;
+        width: 358px;
+    }
+    .lastname{
+        margin: auto;
+    }
+    .formcolumn {
+        width: auto;
+    }
+    .formcolumn input,
+    .formcolumn select,
+    #lname {
+        width: 358px;
+    }
+    .employ-logo{
+        display: none;
+    }
+    .employbody{
+        height: auto;
+    }
+    .nextpg-btn p{
+        font-size: 16px;
+    }
+    .nextpg-btn{
+        width: 132px;
+    }
+
+    
+
+
+}

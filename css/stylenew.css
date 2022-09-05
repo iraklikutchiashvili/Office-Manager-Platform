@@ -1,0 +1,252 @@
+/*Landing Page Styles */
+
+
+.landing-container {
+    margin: 79px auto;
+    max-width: 781px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-img {
+    max-width: 781px;
+    width: 100%;
+    height: auto;
+    margin: 85px  123px;
+}
+
+.low-res-img{
+    display: none;
+}
+
+.btn {
+    max-width: 387px;
+    width: 100%;
+    height: 60px;
+    background-color: #62A1EB;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 26px;
+    font-size: 20px;
+    opacity: 0.6;
+    transition: 0.3s;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+}
+
+.btn:hover {
+    opacity: 2;
+}
+
+/* EMPLOY STYLES */
+
+/* header styles */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F6EE;
+    min-height: auto;
+}
+
+.flex-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1779px;
+    width: 100%;
+    height: 93px;
+    margin: 20px auto 100px auto;
+}
+
+.back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 53px;
+    background-color: #D9D9D9;
+    width: 53px;
+    height: 53px;
+    border: none;
+    border-radius: 50%;
+}
+
+.pagenames-box {
+    margin: 91px auto;
+    max-width: 578px;
+    width: 100%;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.infop, .laptopreq {
+    font-size: 20px;
+    position: relative;
+    margin-left: 20px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+}
+
+.infop-line, .laptopreq-line{
+    content: "";
+    display: block;
+    background-color: #000000;
+    height: 2px;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.infop-line {
+    margin-right: 298px;
+    width: 185px;
+}
+
+.laptopreq-line {
+    margin-left: 283px;
+    width: 230px;
+}
+
+.employpgnum{
+    display: none;
+}
+
+/* form styles */
+
+.employform, .laptopForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1226px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+    padding: 150px;
+    background-color: #FFFFFF;
+}
+
+.namesbox {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    height: auto;
+}
+
+.formcolumn {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 170px;
+}
+
+
+#fname, #lname {
+    width: 100%;
+}
+.lastname{
+    margin-left: 10%;
+}
+.formcolumn input:focus{
+    outline-color: #2B4BF2;
+}
+
+.formcolumn input {
+    border-style: solid;
+    border-color: #42A5F5;
+    border-width: 1.8px;
+    border-radius: 8px;
+    padding-left: 16px;
+    font-size: 18px;
+    height: 60px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+.formcolumn select {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    background-color: #EBEBEB;
+    font-size: 18px;
+    padding-left: 16px;
+}
+
+.formcolumn select:focus {
+    border: 2px solid #2B4BF2;
+    outline: none;
+}
+
+.formcolumn label{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+}
+
+.error {
+    color: #E52F2F;
+    border-color: #E52F2F;
+}
+.error input {
+    border: 2px solid #E52F2F;
+    color: #E52F2F;
+}
+
+.error select {
+    border: 2px solid #E52F2F;
+}
+
+.success {
+    color: green;
+}
+.success input {
+    border: 2px solid green;
+    color: green;
+}
+
+.success select {
+    border: 2px solid green;
+}
+
+
+.formcolumn p {
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.nextpg-btn {
+    width: 176px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62A1EB;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-left: 80%;
+    opacity: 0.8;
+}
+
+.nextpg-btn:hover {
+    opacity: 2;
+}
+
+.defaultnextpgbtn {
+    display: none;
+}
