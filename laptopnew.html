@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylenew.css">
+    <link rel="stylesheet" href="css/responsivenew.css">
+    <link rel="stylesheet" href="fonts/HelveticaNeue.ttc">
+    <script src="https://kit.fontawesome.com/9e9d8a35a7.js" crossorigin="anonymous"></script>
+    <title>Laptop Requirements</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="flex-cont">
+
+        <div class="back-btn" onclick="location.href='employ.html';" style="cursor: pointer;">
+            <img src="images/vector.svg" alt="Vector">
+        </div>
+    
+        
+        <div class="pagenames-box">
+            <p class="infop">თანამშრომლის ინფო</p>
+            <p class="laptopreq">ლეპტოპის მახასიათებლები</p>
+            <small class="employpgnum">2/2</small>
+            <div class="laptopreq-line"></div>            
+        </div>
+
+
+    </div>
+
+<!-- IMAGE UPLOAD FILE -->
+
+    
+
+    <div class="iupload-container">
+
+
+        <div class="content">
+
+            <object class="upload-image" data="image.jpg" type="image"><img id="img" alt=""></object>
+
+            <div class="image-text"><p class="uploadimg-p">ჩააგდე ან ატვირთე ლეპტოპის ფოტო</p><i class="fa fa-camera"></i></div>
+
+
+            <input type="file" id="default-btn" value="" hidden>
+            <button id="custom-btn" onclick="defaultBtnActive()">ატვირთე</button>
+                
+
+        </div>
+
+
+        <div class="cancel-btn"><i class="fas fa-times"></i></div>
+
+
+    </div>
+
+    
+
+
+    <form class="laptopForm"  action="infoadded.html" method="post">
+        <!-- ლეპტოპის სახელი -->
+        <div class="namesbox">
+            <div class="formcolumn">
+                <label for="lapname"> ლეპტოპის სახელი</label>
+                <input type="text" id="lapname" name="lap_name" placeholder="HP">
+                <p>ლათინური ასოები ციფრები, !@#$%^&*()_+-</p><br><br>
+            </div>
+        <!-- ლეპტოპის ბრენდი -->
+            <div class="formcolumn brand">
+                <select name="laptop_brand" id="brand">
+                    <option value="">ლეპტოპის ბრენდი</option>
+                </select>
+                <p></p>
+            </div>
+
+        </div>
+
+        <div class="divide-line"></div>
+
+            <!-- CPU -->
+        <div class="cpubox">
+            <div class="formcolumn">
+                <select name="laptop_cpu" id="cpu">
+                    <option value="">CPU</option>
+                </select>
+                <p></p>
+            </div>
+            <!-- ბირთვები -->
+            <div class="formcolumn cpu">
+                <label for="cpucores">CPU-ს ბირთვი</label>
+                <input type="number" id="cpucores" name="laptop_cpu_cores" placeholder="14">
+                <p>მხოლოდ ციფრები</p>
+            </div>
+            <!-- ნაკადები -->
+            <div class="formcolumn cpu">
+                <label for="cputhreads">CPU-ს ნაკადი</label>
+                <input type="number" id="cputhreads" name="laptop_cpu_threads" placeholder="365">
+                <p>მხოლოდ ციფრები</p>
+            </div>
+        </div>
+        
+        <!-- რამი -->
+        <div class="ramandmemory">
+            <div class="formcolumn">
+                <label for="ram">ლეპტოპის RAM(GB)</label>
+                <input type="number" id="ram" name="laptop_ram" placeholder="16" min="0">
+                <p>მხოლოდ ციფრები</p>
+            </div>
+            <!-- მემორი -->
+            <div class="formcolumn">
+                    <h6>მეხსიერების ტიპი</h6>                
+                    <div class="radio">
+                        <input type="radio" id="ssd" name="laptop-hard-drive-type">
+                        <label for="ssd">SSD</label>
+                        <input type="radio" id="hdd" name="laptop-hard-drive-type">
+                        <label for="hdd">HDD</label>
+                    </div>
+                    <p></p>
+            </div> 
+        </div>
+        
+        <div class="divide-line"></div>
+
+       <div class="namesbox">
+             <!-- DATE -->
+            <div class="formcolumn">
+                <label for="date">შეძენის რიცხვი (არჩევითი)</label>
+                <input type="date" id="date" name="laptop_purchase_date" placeholder="დდ/თთ/წწ">
+                <p>მხოლოდ ციფრები</პ>
+            </div>
+            <!-- PRICE -->
+            <div class="formcolumn price">
+                <label for="price">ლეპტოპის ფასი</label>
+                <input type="number" id="price" name="laptop_price" placeholder="0000">
+                <p>მხოლოდ ციფრები</p>
+            </div>
+       </div>
+        <!-- მდგომარეობა -->
+        <div class="formcolumn">
+            <h6>ლეპტოპის მდგომარეობა</h6>    
+            <div class="radio state">
+                <input type="radio" id="new" name="laptop_state" value="new">
+                <label for="new" class="new">ახალი</label>
+                <input type="radio" id="used" name="laptop_state" value="used">
+                <label for="used">მეორადი</label>
+            </div>
+            <p></p>
+        </div>
+
+        <button type="submit" class="defaultSavebtn"></button>
+
+        <div class="save-backp"> 
+
+            <a class="backp" href="employ.html">უკან</a>
+            <div class="saveBtn" onclick="defaultSaveBtnActive()" style="cursor: pointer;" >
+                <p>დამახსოვრება</p>
+            </div>
+
+            
+        </div>
+
+        
+
+
+    </form>
+
+    <img src="images/logo102.svg" alt="Logo" class="employ-logo">
+
+    <script src="js/laptops.js"></script>
+</body>
+</html>

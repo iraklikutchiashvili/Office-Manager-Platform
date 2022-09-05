@@ -93,7 +93,59 @@
         width: 132px;
     }
 
+     /* LAPTOP REQ RESPONSIVE */
+
+     .laptopreq-line{
+        display: none;
+    }
+    .divide-line{
+        display: none;
+    }
+    .cpubox{
+        flex-direction: column;
+    }
+    .laptopForm{
+        padding: 20px;
+    }
     
+    .formcolumn #cpu,
+    .formcolumn #cpucores,
+    .formcolumn #cputhreads {
+        width: 358px;
+    }
+    .cpu{
+        margin: auto;
+    }
+    .ramandmemory{
+        flex-direction: column;
+    }
+    .radio #ssd,
+    .radio #hdd,
+    .radio #new,
+    .radio #used {
+        height: 20px;
+        width: 100%;
+    }
+    .radio {
+        margin-right: 200px;
+    }
+    .ramandmemory h6{
+        margin-left: 1px;
+    }
+    .save-backp{
+        width: 358px;
+    }
+    .saveBtn{
+        width: 133px;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .laptopForm{
+        margin: auto;
+    }
+    .brand, .price{
+        margin: auto;
+    }
 
 
 }

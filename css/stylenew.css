@@ -250,3 +250,239 @@ body {
 .defaultnextpgbtn {
     display: none;
 }
+
+/* LAPTOP REQ STYLES */
+
+
+/* IMAGE UPLOAD STYLES */
+.imguplfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1226px;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    background-color: #FFFFFF;
+}
+
+.iupload-container {
+    position: relative;
+    margin: 68px auto;
+    max-width: 878px;
+    width: 100%;
+    height: 423px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F6F6;
+    border: 2px dashed #1976D2;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.error .iupload-container{
+    background-color: #FFF1F1;
+}
+.error {
+    color: #E52F2F;
+    border-color: #E52F2F;
+}
+.error p {
+    color: #E52F2F;
+}
+.success {
+    border-color: green;
+}
+.error .uploadimg-p{
+    color: #E52F2F;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 107px auto;
+}
+
+.upload-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.nobtn {
+    display: none;
+}
+
+.upload-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-hidden {
+    visibility: hidden;
+}
+
+
+.cancel-btn {
+    font-size: 25px;
+    cursor: pointer;
+    color: #62A1EB;
+    display: none;
+}
+
+
+.cancel-btn.active {
+    display: block;
+    position: absolute;
+    margin-bottom: 380px;
+    margin-left: 845px;
+}
+
+.cancel-btn:hover {
+    color: #CD5C5C;
+}
+
+
+.image-text {
+    width: 195px;
+    height: 76px;
+    color: #1976D2;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.fa {
+    visibility: hidden;
+}
+
+.upload-btnp-media {
+    display: none;
+}
+
+
+
+#custom-btn {
+    width: 233px;
+    height: 60px;
+    background-color: #62A1EB;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 100px;
+}
+
+
+/* LAPTOP REQUIREMENTS */
+
+.formcolumn #cpu,
+.formcolumn #cpucores,
+.formcolumn #cputhreads {
+    width: 100%;
+}
+
+.cpubox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#brand {
+    margin-top: 35px;
+}
+.brand{
+    margin-left: 10%;
+}
+.cpu {
+    margin-left: 10%;
+}
+#cpu {
+    margin-top: 30px;
+}
+.formcolumn #ram {
+    width: 100%;
+}
+
+.ramandmemory {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ramandmemory h6 {
+    margin-left: 137px;
+}
+
+.formcolumn h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.price{
+    margin-left: 10%;
+}
+
+.radio #ssd,
+.radio #hdd,
+.radio #new,
+.radio #used {
+    height: 20px;
+    width: 20%;
+}
+
+.state {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.saveBtn {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62A1EB;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-left: 78%;
+    opacity: 0.8;
+}
+.saveBtn:hover {
+    opacity: 2;
+}
+.defaultSavebtn {
+    display: none;
+}
+
+.error h6 {
+    color: #E52F2F;
+}
+.backp{
+    color: #62A1EB;
+    font-size: 18px;
+}
+.save-backp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
